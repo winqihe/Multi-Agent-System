@@ -2,6 +2,8 @@
 
 基于 LangGraph 的多 Agent 课程创作系统，通过 Researcher、Judge、Content Builder 三个 Agent 协作，自动生成高质量课程内容。
 
+![alt text](d57b7d74-5573-48bd-81db-a91be9c80264.png)
+
 ## Features
 
 - **多 Agent 协作**: Researcher 搜索信息 → Judge 评审质量 → Content Builder 生成课程
