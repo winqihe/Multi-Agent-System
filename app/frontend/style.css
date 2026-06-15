@@ -1,0 +1,239 @@
+/* Course Creation App - Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.input-section {
+    margin-bottom: 30px;
+}
+
+.input-section label {
+    display: block;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.input-section input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s;
+}
+
+.input-section input:focus {
+    border-color: #667eea;
+    outline: none;
+}
+
+.input-section button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.input-section button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+.input-section button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.progress-section, .result-section, .error-section {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.progress-section {
+    background: #f5f5f5;
+}
+
+.progress-section h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.progress-log {
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+
+.progress-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.progress-item:last-child {
+    border-bottom: none;
+}
+
+.progress-item .agent {
+    font-weight: bold;
+    color: #667eea;
+}
+
+.result-section {
+    background: #e8f5e9;
+}
+
+.result-section h3 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+.course-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    max-height: 500px;
+    overflow-y: auto;
+    line-height: 1.6;
+}
+
+.course-content h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.course-content h2 {
+    font-size: 1.3rem;
+    color: #444;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.course-content h3 {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.course-content ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.course-content li {
+    margin-bottom: 5px;
+}
+
+.course-content p {
+    margin-bottom: 10px;
+}
+
+.course-content code {
+    background: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace;
+    font-size: 0.9em;
+}
+
+.course-content pre {
+    background: #2d2d2d;
+    color: #f8f8f2;
+    padding: 16px;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 15px 0;
+}
+
+.course-content pre code {
+    background: none;
+    color: inherit;
+    padding: 0;
+}
+
+.course-content strong {
+    color: #333;
+}
+
+.course-content hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 20px 0;
+}
+
+.result-section button {
+    padding: 10px 20px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.error-section {
+    background: #ffebee;
+}
+
+.error-section h3 {
+    color: #c62828;
+    margin-bottom: 10px;
+}
+
+.error-section p {
+    color: #b71c1c;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #999;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,11 @@
+[project]
+name = "orchestrator-agent"
+version = "0.1.0"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn>=0.32.0",
+    "langgraph>=0.2.0",
+    "httpx>=0.28.0",
+    "pydantic>=2.0.0",
+    "python-dotenv>=1.0.0",
+]

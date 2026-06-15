@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课程创作助手</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>课程创作助手</h1>
+            <p class="subtitle">基于多 Agent 协作的智能课程生成系统</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <label for="topic">请输入课程主题：</label>
+                <input type="text" id="topic" placeholder="例如：机器学习基础、Python 编程入门..." />
+                <button id="generateBtn" onclick="generateCourse()">生成课程</button>
+            </div>
+
+            <div id="progressSection" class="progress-section hidden">
+                <h3>生成进度</h3>
+                <div id="progressLog" class="progress-log"></div>
+            </div>
+
+            <div id="resultSection" class="result-section hidden">
+                <h3>课程内容</h3>
+                <div id="courseContent" class="course-content"></div>
+                <button onclick="copyContent()">复制内容</button>
+            </div>
+
+            <div id="errorSection" class="error-section hidden">
+                <h3>错误</h3>
+                <p id="errorMessage"></p>
+            </div>
+        </main>
+
+        <footer>
+            <p>Powered by LangGraph + Multi-Agent System</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
